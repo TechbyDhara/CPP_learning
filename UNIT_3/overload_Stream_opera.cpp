@@ -11,7 +11,9 @@ public:
     }
 
     friend ostream& operator << (ostream &out,Student &s);
+
 };
+
 ostream& operator << (ostream &out, const Student &s) {
     out << "Name: " << s.name << ", Age: " << s.age;
     return out;  
@@ -21,4 +23,5 @@ int main() {
     cout << s1;   
     return 0;
 }
+
 
